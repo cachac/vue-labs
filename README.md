@@ -196,3 +196,22 @@ Ejemplo:
 ```js
 <p :style="{ textDecoration: task.done ? 'line-through' : 'none' }">
 ```
+
+# Fetch
+- En un nuevo proyecto: Fetch
+- Elimina HelloWorld.vue y assets/logo.png
+
+El siguiente ejercicio muestra una tabla con datos de usuarios obtenidos de una API pública. En la tabla se muestra un botón para ver el detalle de cada usuario en un modal.
+
+## UserTable.vue
+```js
+```
+
+## UserModal.vue
+```js
+```
+
+## App.vue
+```js
+```
+
