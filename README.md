@@ -172,7 +172,7 @@ App.vue
 ```
 
 
-# Practica, en uno proyecto.
+# Practica, en un nuevo proyecto.
 ## El padre (App.vue) tenga una lista de tareas y un contador de completadas
 ```js
 tasks: [
