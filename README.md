@@ -259,6 +259,7 @@ App.vue
 ## 13.2. Crea el componente UserForm.vue
 ## 13.3. Cuando se envia el formulario, el padre debe recibir el evento y agregar el usuario a la lista.
 ## 13.4. Crea un nuevo botón en cada línea de la tabla para eliminar el usuario.
+## 13.5. Cambia el modal por una nueva página con los detalles del usuario.
 
 # 14. Pinia
 - En un nuevo proyecto: Pinia.
@@ -283,27 +284,27 @@ app.use(createPinia());
 
 ```
 
-## Practica, integra Pinia con los componentes: UserTable, UserModal y UserForm.
+## 14.3. Practica, integra Pinia con los componentes: UserTable, UserModal y UserForm.
 
 
-# Practica final.
-## Crea un nuevo proyecto: ecommerce
-## Opcional: usar Vuetify para mostrar los componentes.
-## En el archivo principal, llama al API: https://fakestoreapi.com/products
-## Muestra los productos en un componente tipo lista o tabla.
-## Los productos deben ser guardados en un array con pinia. Crea un nuevo store para los productos.
+# 15. Practica final.
+## 15.1. Crea un nuevo proyecto: ecommerce
+## 15.2. Opcional: usar Vuetify para mostrar los componentes.
+## 15.3. En el archivo principal, llama al API: https://fakestoreapi.com/products
+## 15.4. Muestra los productos en un componente tipo lista o tabla.
 	- title
 	- price
 
-## Al dar click en un producto, debe abrir un modal con los detalles del producto.
+## 15.5. Los productos deben ser guardados en un array con pinia. Crea un nuevo store para los productos.
+## 15.6. Al dar click en un producto, debe abrir una nueva página con los detalles del producto.
 	- id
 	- title
 	- price
 	- description
 	- image
 
-## Agrega un boton de comprar.
-## Al darle comprar, debe agregar el producto al carrito. Crea un nuevo store para el carrito.
-## En el archivo principal, muestra un botón para ver el carrito.
-## Al darle ver carrito, debe mostrar un modal con los productos agregados.
-## Agregar un boton de eliminar del carrito.
+## 15.7. Agrega un boton de comprar.
+## 15.8. Al darle comprar, debe agregar el producto al carrito. Crea un nuevo store para el carrito.
+## 15.9. En el archivo principal, muestra un botón para ver el carrito.
+## 15.10. Al darle ver carrito, debe mostrar un modal con los productos agregados.
+## 15.11. Agregar un boton de eliminar del carrito.
