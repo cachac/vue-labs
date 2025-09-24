@@ -172,13 +172,27 @@ App.vue
 ```
 
 
-# Practica
-- El padre (App.vue) tenga una lista de tareas.
+# Practica, en uno proyecto.
+## El padre (App.vue) tenga una lista de tareas y un contador de completadas
+```js
+tasks: [
+        { id: 1, name: "Estudiar Vue.js", done: false },
+        { id: 2, name: "Practicar props", done: false },
+        { id: 3, name: "Hacer el ejercicio", done: false },
+      ]
+completedCount: 0
+```
 
-- Cada tarea se muestre con un componente hijo (TaskItem.vue).
+- Cada tarea se muestre con un componente hijo (TaskItem.vue). Y debe tener un boton para completarla.
 
 - El padre le pase al hijo la tarea como prop.
 
 - El hijo emita un evento cuando la tarea se complete.
 
 - El padre actualice el contador de tareas completadas.
+
+- El hijo muestra la tarea como completada (puede usar un estilo tachado y un emoji de "✅")
+Ejemplo:
+```js
+<p :style="{ textDecoration: task.done ? 'line-through' : 'none' }">
+```
