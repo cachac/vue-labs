@@ -21,11 +21,14 @@
     <!-- v-model -->
     <input v-model="name" type="text" />
     <p>{{ name }}</p>
+
+    <!-- computed -->
+    <p>{{ nombreContador }}</p>
   </div>
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits } from "vue";
+import { ref, defineProps, defineEmits, computed } from "vue";
 const props = defineProps({
   name: String,
 });
@@ -42,4 +45,7 @@ const incrementar = () => {
   counter.value++;
 	emits("incrementar", counter.value);
 };
+const nombreContador = computed(() => {
+  return `Nombre y Contador: ${name.value} - ${counter.value}`;
+});
 </script>

@@ -10,11 +10,11 @@ export default {
   components: {
     CounterDemo,
   },
-	methods: {
-		mensaje(value) {
-			alert("Incrementado: " + value);
-		},
-	},
+  methods: {
+    mensaje(value) {
+      alert("Incrementado: " + value);
+    },
+  },
 };
 </script>
 
