@@ -134,7 +134,7 @@ const incrementar = () => {
 
 ```
 
-# Props
+# 8. Props
 CounterDemo.vue
 ```js
 import { ref, defineProps } from "vue";
@@ -149,7 +149,7 @@ App.vue
 <CounterDemo name="Test" />
 ```
 
-# Emits
+# 9. Emits
 CounterDemo.vue
 ```js
 import { ref, defineProps, defineEmits } from "vue";
@@ -172,8 +172,8 @@ App.vue
 ```
 
 
-# Practica, en un nuevo proyecto.
-## El padre (App.vue) tenga una lista de tareas y un contador de completadas
+# 10. Practica, en un nuevo proyecto.
+## 10.1. El padre (App.vue) tenga una lista de tareas y un contador de completadas
 ```js
 tasks: [
         { id: 1, name: "Estudiar Vue.js", done: false },
@@ -197,21 +197,53 @@ Ejemplo:
 <p :style="{ textDecoration: task.done ? 'line-through' : 'none' }">
 ```
 
-# Fetch
+# 11. Fetch
 - En un nuevo proyecto: Fetch
 - Elimina HelloWorld.vue y assets/logo.png
 
 El siguiente ejercicio muestra una tabla con datos de usuarios obtenidos de una API pública. En la tabla se muestra un botón para ver el detalle de cada usuario en un modal.
 
-## UserTable.vue
+La lista de usuarios se carga cuando se monta el componente.
+
+## 11.1. UserTable.vue
 ```js
 ```
 
-## UserModal.vue
+## 11.2. UserModal.vue
 ```js
 ```
 
-## App.vue
+## 11.3. App.vue
+```js
+```
+
+# 12. Vuetify
+- En un nuevo proyecto: Vuetify
+
+```js
+npm create vuetify@latest
+```
+Abrir el proyecto en el browser
+http://localhost:3000
+
+## 12.1. Este tipo de proyecto utiliza un router para mostrar los vue de la carpeta pages
+App.vue
+```js
+<router-view />
+```
+
+## 12.2. Agrega los componentes del ejercicio Fetch en pages/index.vue
+- Elimina HelloWorld.vue y assets/logo.png
+
+## 12.3. pages/index.vue
+```js
+```
+
+## 12.4. components/UserTable.vue
+```js
+```
+
+## 12.5. components/UserModal.vue
 ```js
 ```
 
