@@ -247,3 +247,63 @@ App.vue
 ```js
 ```
 
+# 13. Practica: agrega un nuevo componente para agregar nuevos usuarios.
+## 13.1. En App.vue agrega un boton para abrir el modal de agregar usuario.
+```js
+  <v-col cols="12" sm="6">
+		<v-btn @click="showForm = true" color="success">Agregar Usuario</v-btn>
+	</v-col>
+```
+
+
+## 13.2. Crea el componente UserForm.vue
+## 13.3. Cuando se envia el formulario, el padre debe recibir el evento y agregar el usuario a la lista.
+## 13.4. Crea un nuevo botón en cada línea de la tabla para eliminar el usuario.
+
+# 14. Pinia
+- En un nuevo proyecto: Pinia.
+- Copia los componentes del ejercicio Vuetify.
+
+## 14.1. Instalar pinia
+```js
+npm install pinia
+```
+## 14.2. Crea la carpeta src/store y el archivo users.js
+
+main.js
+```js
+import { createPinia } from "pinia";
+
+app.use(createPinia());
+...
+```
+
+### 14.2.1. Integra index.vue con pinia
+```js
+
+```
+
+## Practica, integra Pinia con los componentes: UserTable, UserModal y UserForm.
+
+
+# Practica final.
+## Crea un nuevo proyecto: ecommerce
+## Opcional: usar Vuetify para mostrar los componentes.
+## En el archivo principal, llama al API: https://fakestoreapi.com/products
+## Muestra los productos en un componente tipo lista o tabla.
+## Los productos deben ser guardados en un array con pinia. Crea un nuevo store para los productos.
+	- title
+	- price
+
+## Al dar click en un producto, debe abrir un modal con los detalles del producto.
+	- id
+	- title
+	- price
+	- description
+	- image
+
+## Agrega un boton de comprar.
+## Al darle comprar, debe agregar el producto al carrito. Crea un nuevo store para el carrito.
+## En el archivo principal, muestra un botón para ver el carrito.
+## Al darle ver carrito, debe mostrar un modal con los productos agregados.
+## Agregar un boton de eliminar del carrito.

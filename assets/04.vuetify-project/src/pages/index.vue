@@ -1,12 +1,13 @@
-<!-- eslint-disable vue/script-indent -->
+<!-- eslint-disable -->
 <template>
-	<h1>Usuarios</h1>
+  <h1>Usuarios</h1>
+
   <UserTable :users="users" @show-details="openModal" />
   <UserModal v-if="showModal" :user="selectedUser" @close="closeModal" />
 </template>
 
 <script setup>
-// eslint-disable vue/script-indent
+// eslint-disable
 import { ref, onMounted } from "vue";
 
 const users = ref([]);
