@@ -200,13 +200,13 @@ tasks: [
 completedCount: 0
 ```
 
-- Cada tarea se muestre con un componente hijo (TaskItem.vue). Y debe tener un boton para completarla.
+- Cada tarea se muestra con un componente hijo (TaskItem.vue). Y debe tener un botón para completarla.
 
-- El padre le pase al hijo la tarea como prop.
+- El padre le pasa al hijo la tarea como prop.
 
-- El hijo emita un evento cuando la tarea se complete.
+- El hijo emite un evento cuando la tarea se completa.
 
-- El padre actualice el contador de tareas completadas.
+- El padre actualiza el contador de tareas completadas.
 
 - El hijo muestra la tarea como completada (puede usar un estilo tachado y un emoji de "✅")
 Ejemplo:
